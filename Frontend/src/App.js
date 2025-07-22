@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route ,Navigate  } from "react-router-dom";
-// import './App.css';
+import './App.css';
 // import ChatApp from "./Component/AllChat";
 import RegisterForm from './Auth/register';
 import LoginForm from "./Auth/login";
@@ -20,7 +20,5 @@ export default function App() {
 
       </Routes>
     </Router>
-    // <Header/>
-    // <h1>hello</h1>
   );
 } 

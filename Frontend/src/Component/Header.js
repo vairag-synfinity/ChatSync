@@ -26,7 +26,7 @@ export default function Header() {
   };
 
   const titleStyle = {
-    fontSize: '1.5rem',
+    fontSize: '1rem',
     fontWeight: 'bold',
     color: '#333',
   };
@@ -38,5 +38,6 @@ export default function Header() {
       <img style={logoStyle} onClick={handleLogout} src={ProfilePicture}alt="profile" />
       
     </nav>
+    
   );
 }

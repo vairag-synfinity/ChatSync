@@ -17,6 +17,7 @@ function RegisterForm() {
     try {
       const res = await axios.post('http://localhost:5000/api/auth/register', { username, gmail, password  });
      localStorage.setItem('token', res.data.token);  // Save token in localStorage
+     localStorage.setItem('username', res.data.user.username);  // Save username in localStorage
     navigate('/chat'); 
       
       setMessage(res.data.message);
