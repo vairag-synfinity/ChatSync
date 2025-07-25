@@ -1,5 +1,6 @@
-import Header from "../Component/Header";
-import AllChat from "../Component/AllChat";
+// import Header from "../Component/Header";
+// import AllChat from "../Component/AllChat";
+import GroupChat from "../Component/GroupChat";
 // import AudioCall from "../Component/AudioCall";
 // import VideoCall from "../Component/VideoCall";
 // import PrivateChat from "../Component/OneToOne";
@@ -9,10 +10,11 @@ import AllChat from "../Component/AllChat";
 export default function HomePage(){
     return(
         <>
-        <Header/>
-        <AllChat/>
+        {/* <Header/>
+        <AllChat/> */}
         {/* <AudioCall/>/ */}
         {/* <VideoCall/> */}
+        <GroupChat/>
         </>
     )
 }                                                                                                                                

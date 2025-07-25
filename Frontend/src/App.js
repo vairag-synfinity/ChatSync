@@ -6,6 +6,7 @@ import LoginForm from "./Auth/login";
 import ProtectedRoute from "./Auth/ProtectedRoute";
 import HomePage from "./pages/Home";
 
+
 // import Header from "./Component/Header";
 
 export default function App() {
@@ -16,7 +17,7 @@ export default function App() {
         <Route path="/chat" element={<ProtectedRoute><HomePage/></ProtectedRoute>} />
         <Route path="/login" element={<LoginForm/>} />
         <Route path="/register" element={<RegisterForm />} />
-                <Route path="*" element={<Navigate to="/register" />} />
+        <Route path="*" element={<Navigate to="/register" />} />
 
       </Routes>
     </Router>

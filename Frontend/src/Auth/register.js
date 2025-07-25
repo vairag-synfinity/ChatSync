@@ -4,6 +4,7 @@ import { useNavigate,Link  } from 'react-router-dom';
 import '../css/registerUI.css'
 
 
+
 function RegisterForm() {
   const [username, setUsername] = useState('');
   const [gmail, setGmail] = useState('');
@@ -13,9 +14,10 @@ function RegisterForm() {
 
 
   const handleRegister = async (e) => {
+    // console.log(process.env.REACT_APP_BACKEND_URL);
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', { username, gmail, password  });
+      const res = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/auth/register`, { username, gmail, password  });
      localStorage.setItem('token', res.data.token);  // Save token in localStorage
      localStorage.setItem('username', res.data.user.username);  // Save username in localStorage
     navigate('/chat'); 

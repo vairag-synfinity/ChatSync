@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import io from 'socket.io-client';
 
-const socket = io('http://192.168.1.120:5000');
+const socket = io(process.env.REACT_APP_BACKEND_URL);
 const servers = {
     iceServers: [
         { urls: 'stun:stun.l.google.com:19302' },
